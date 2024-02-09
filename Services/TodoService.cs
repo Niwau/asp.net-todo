@@ -2,15 +2,11 @@ using todo.Models;
 namespace todo.Services;
 
 public static class TodoService {
-  static readonly List<Todo> todos;
-
-  static TodoService() {
-    todos = [
-      new Todo { Id = 1, Title = "Estudar C#", IsComplete = false },
-      new Todo { Id = 2, Title = "Estudar .NET", IsComplete = false },
-      new Todo { Id = 3, Title = "Estudar ASP.NET", IsComplete = false }
-    ];
-  }
+  static readonly List<Todo> todos = [
+    new Todo { Id = 1, Title = "Estudar C#", IsComplete = false },
+    new Todo { Id = 2, Title = "Estudar .NET", IsComplete = false },
+    new Todo { Id = 3, Title = "Estudar ASP.NET", IsComplete = false }
+  ];
 
   public static void Add(Todo todo) {
     todos.Add(todo);
